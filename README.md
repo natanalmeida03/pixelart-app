@@ -2,6 +2,7 @@
 
 site para desenhar pixel arts
 
+![pixelartapp](/img/pixelartsite.png)
 ### Funcionalidades Disponíveis
 - [x] desenhar pixel art
 - [x] redimensionar canva
