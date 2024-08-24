@@ -9,6 +9,6 @@ site para desenhar pixel arts
 - [x] salvar desenho
 - [x] manter histórico de cores
   
-### Funcionalidades Futuros
+### Funcionalidades Futuras
 - [ ] salvar imagem com fundo transparente
 - [ ] redimensionar canva sem alterar o conteúdo já desenhado
