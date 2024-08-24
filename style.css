@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+body {
+    background-color: #212121;
+}
+
+header {
+    background-color: #292929;
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+header > h1 {
+    color: #ededed;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+aside {
+    width: 100%;
+    max-width: 300px;
+    background-color: #292929;
+    padding: 30px 20px 20px;
+    height: calc(100vh - 60px);
+}
+
+.canvas {
+    width: 100%;
+    max-width: 720px;
+    aspect-ratio: 1;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.row {
+    display: flex;
+    gap: 2px;
+}
+.pixel {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #444;
+    user-select: none;
+}
+
+.option-title {
+    color: #ededed;
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+}
+
+.input-size {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #292929;
+    outline: none;
+    margin: 10px 0 20px;
+}
+
+.input-color {
+    appearance: none;
+    width: 42px;
+    height: 45px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 5px 0 15px;
+}
+
+.input-color::-moz-color-swatch {
+    border-radius: 4px;
+    border: 2px solid #ebebeb;
+}
+
+.input-color::-webkit-color-swatch {
+    border-radius: 4px;
+    border: 2px solid #ebebeb;
+}
+
+.used-colors {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.button-color {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-save {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 100px;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    background-color: #ebebeb;
+}
+
+.button-save:hover {
+    background-color: #cdcdcd;
+}
+
+.resize {
+    height: 720px;
+    width: 2px;
+    background-color: #444;
+    margin-top: 20px;
+    cursor: col-resize;
+}

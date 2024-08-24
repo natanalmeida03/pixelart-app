@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel art</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>PIXELART</h1>
+    </header>
+
+    <main>
+      <aside>
+        <span class="option-title">Tamanho: </span>
+        <input type="number" class="input-size" min="4" value="16" />
+
+        <span class="option-title">Cor: </span>
+        <input type="color" class="input-color" />
+        <span class="option-title">Paleta: </span>
+        <section class="used-colors">
+            <!-- <button class="button-color" data-color="#000" style="background-color: #000;"></button> -->
+        </section>
+
+        <button class="button-save">SALVAR IMAGEM</button>
+      </aside>
+
+      <section class="canvas"></section>
+      <div class="resize"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
